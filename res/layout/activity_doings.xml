@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/titlebg" >
+
+        <Button
+            android:id="@+id/doings_back_btn"
+           android:layout_width="31.8dip"
+            android:layout_height="24dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/back"
+            android:textColor="#57616c"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="爱语"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" >
+        </TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"     
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/doings_commentlist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="#b1b6b9"
+            android:dividerHeight="1dip"
+            android:padding="10dip" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/txt_msg_bg"
+        android:orientation="horizontal"
+        android:paddingRight="7.0dip" >
+
+        <Button
+            android:id="@+id/doingcommment_emotion"
+            android:layout_width="24.0dip"
+            android:layout_height="24.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/emotion"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/doingcomment_edit"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="7.0dip"
+            android:layout_marginRight="7.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_weight="1.0"
+            android:autoText="true"
+            android:background="@drawable/sms_embeded_text_editor_bg"
+            android:capitalize="sentences"
+            android:focusable="true"
+            android:hint="输入消息"
+            android:imeOptions="actionSend|flagNoEnterAction"
+            android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage"
+            android:maxLength="2000"
+            android:maxLines="8"
+            android:minHeight="34.0dip"
+            android:nextFocusRight="@+id/send_button"
+            android:textColor="#000000">
+            <requestFocus />
+ </EditText>
+        <Button
+            android:id="@+id/doingcomment_send"
+            android:layout_width="50dip"
+            android:layout_height="40dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/sms_send_button_bg"
+            android:gravity="center"
+            android:nextFocusLeft="@id/doingcomment_edit"
+            android:paddingLeft="11.0dip"
+            android:paddingRight="11.0dip" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/emotion_show"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/txt_msg_bg"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/emotiongridview" />
+    </RelativeLayout>
+
+</LinearLayout>

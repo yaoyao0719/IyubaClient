@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/titlebg"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/write_back_btn"
+             android:layout_width="31.8dip"
+            android:layout_height="24dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/back"
+            android:textColor="#57616c"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+           android:text="写日志"
+            android:textColor="#ffffff"
+            android:textSize="20sp" 
+            android:textStyle="bold">
+        </TextView>
+
+        <Button 
+            android:id="@+id/publishblog"
+            android:layout_width="27dip"
+            android:layout_height="24dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/send"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginRight="5dip"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/title"
+        android:layout_margin="10dip" >
+
+        <EditText
+            android:id="@+id/blog_subject"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="标题"
+            android:imeOptions="actionSend"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/blog_message"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/blog_subject"
+            android:gravity="top"
+            android:hint="正文"
+            android:imeOptions="actionSend"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gridview"
+        android:background="#d1d1d3"
+        android:visibility="gone"
+        android:gravity="center_vertical" >
+
+
+        <Button
+            android:id="@+id/blogemotion"
+            android:layout_width="24dip"
+            android:layout_height="24dip"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dip"
+            android:background="@drawable/emotion" />
+
+        <Button
+            android:id="@+id/blogkeyboard"
+            android:layout_width="26dip"
+            android:layout_height="18dip"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dip"
+            android:background="@drawable/keyboard"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <GridView
+            android:id="@+id/grid_emotion"
+            android:layout_width="fill_parent"
+            android:layout_height="300dip"
+            android:background="#d1d8e3"
+            android:columnWidth="40dp"
+            android:gravity="center"
+            android:numColumns="auto_fit"
+            android:scrollbars="vertical"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="15dp"
+            android:visibility="gone" >
+        </GridView>
+    </RelativeLayout>
+
+</RelativeLayout>

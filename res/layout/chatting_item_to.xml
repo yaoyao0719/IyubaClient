@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+    android:orientation="vertical"
+    android:paddingLeft="6.0dip"
+    android:paddingRight="6.0dip" 
+    android:paddingBottom="6.0dip" xmlns:app="http://schemas.android.com/apk/res/com.iyuba.iyubaclient">
+
+    <TextView
+        android:id="@+id/chatting_time_tv"
+        android:layout_width="fill_parent" 
+        android:layout_height="20dip"  
+        android:text="03-19 08:52"  
+        android:layout_gravity="center" 
+        android:gravity="center"  
+        android:layout_marginBottom="5dip"
+/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+           />
+
+        <ImageView
+            android:id="@+id/chatting_state_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/chatting_content_itv"
+            style="@style/ChattingUIText"
+            android:autoLink="web"
+            android:background="@drawable/chatto_bg" />
+
+        <com.iyuba.iyubaclient.util.RoundAngleImageView
+            android:layout_width="40dip"
+            android:layout_height="40.0dip" 
+            android:src="@drawable/defaultavatar"
+            android:id="@+id/chatting_content_iv"
+            android:scaleType="centerCrop"
+            android:layout_gravity="bottom"/>
+     
+    </LinearLayout>
+
+</LinearLayout>

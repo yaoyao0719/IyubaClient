@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/titlebg" >
+
+        <ImageView
+            android:id="@+id/app_image"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_centerVertical="true"
+            android:src="@drawable/navigation_home2" 
+            android:layout_marginLeft="5dip"/>
+
+        <TextView
+            android:id="@+id/app_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="应用广场"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" >
+        </TextView>
+                <ImageView
+            android:id="@+id/app_down"
+            android:layout_width="20dip"
+            android:layout_height="19.5dip"
+            android:layout_centerVertical="true"
+            android:src="@drawable/down" 
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/proDetailApp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="6px"
+            android:max="100"
+            android:orientation="horizontal"
+            android:progress="5"
+            android:visibility="visible" />
+
+        <WebView
+            android:id="@+id/applicationlist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip" />
+    </LinearLayout>
+
+</LinearLayout>

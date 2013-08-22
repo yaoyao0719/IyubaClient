@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/titlebg" >
+
+        <Button
+            android:id="@+id/editinfo_back_btn"
+               android:layout_width="31.8dip"
+            android:layout_height="24dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/editinfo__text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="编辑个人资料"
+            android:textColor="#ffffff"
+            android:textSize="16sp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/editinfo_save_btn"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/save"
+            android:text="保存"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#f8f8f8"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/editPortrait"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/shape_setting_panel_background" >
+
+                <ImageView
+                    android:id="@+id/iveditPortrait"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="30dp"
+                    android:src="@drawable/portrait" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="上传头像"
+                    android:textColor="#0e497b" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="20dp" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_setting_panel_background"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="50dip"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dip"
+                        android:text="性別"
+                        android:textColor="#0e497b" />
+
+                    <TextView
+                        android:id="@+id/editGender"
+                        android:layout_width="0dip"
+                        android:layout_height="50dip"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="女"
+                        android:textColor="#0e497b" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#dcdcdc" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="50dip"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dip"
+                        android:text="生日"
+                        android:textColor="#0e497b" />
+
+                    <TextView
+                        android:id="@+id/editBirthday"
+                        android:layout_width="0dip"
+                        android:layout_height="50dip"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="1989-07-19"
+                        android:textColor="#0e497b" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#dcdcdc" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="50dip"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dip"
+                        android:text="所在地"
+                        android:textColor="#0e497b" />
+
+                    <TextView
+                        android:id="@+id/editResideLocation"
+                        android:layout_width="0dip"
+                        android:layout_height="50dip"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="北京"
+                        android:textColor="#0e497b" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#dcdcdc" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="50dip"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dip"
+                        android:text="生肖"
+                        android:textColor="#0e497b" />
+
+                    <TextView
+                        android:id="@+id/editZodiac"
+                        android:layout_width="0dip"
+                        android:layout_height="50dip"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="蛇"
+                        android:textColor="#0e497b" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#dcdcdc" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="50dip"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dip"
+                        android:text="星座"
+                        android:textColor="#0e497b" />
+
+                    <TextView
+                        android:id="@+id/editConstellation"
+                        android:layout_width="0dip"
+                        android:layout_height="50dip"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="巨蟹"
+                        android:textColor="#0e497b" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

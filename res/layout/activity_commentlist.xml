@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background" >
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/titlebg"
+        android:gravity="center_vertical" >
+        <Button
+            android:id="@+id/comment_back_btn"
+          android:layout_width="31.8dip"
+            android:layout_height="24dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/back"
+            android:textColor="#57616c"
+            android:textSize="12sp"
+            android:gravity="center" />
+
+        <TextView  
+            android:id="@+id/comment_subject"  
+            android:layout_weight="1"       
+            android:layout_width="0dip"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="双语"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:maxLines="1" 
+            android:paddingRight="2dip"
+            android:paddingLeft="2dip"
+            android:ellipsize="end">
+        </TextView>
+        <Button 
+            android:id="@+id/blogcomments"
+            android:layout_width="34dip"
+            android:layout_height="30dip"
+            android:background="@drawable/comments_commentbutton_background"/>
+    </LinearLayout>
+    <ListView
+        
+        android:id="@+id/commentsListView"
+        android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+                android:layout_above="@+id/anchor"
+        android:layout_below="@+id/title"
+        android:cacheColorHint="#00000000"
+        android:descendantFocusability="afterDescendants"
+        android:divider="#b1b6b9"
+        android:dividerHeight="1dip"
+        android:fastScrollEnabled="true"
+        android:smoothScrollbar="true" >
+
+    </ListView>
+ <RelativeLayout
+        android:id="@+id/anchor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#9a9a9a" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+
+            <EditText
+                android:id="@+id/comments_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/comment_edit_background"
+                android:imeOptions="actionSend"
+                android:paddingLeft="60dp"
+                android:singleLine="true" 
+                android:textColor="#000000"
+                >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

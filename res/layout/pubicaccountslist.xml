@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <com.iyuba.iyubaclient.widget.pulltorefresh.PullToRefreshListView
+        android:id="@+id/publicaccountslist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#000000"
+        android:divider="#b1b6b9"
+        android:dividerHeight="1dip"
+        android:fastScrollEnabled="true" >
+    </com.iyuba.iyubaclient.widget.pulltorefresh.PullToRefreshListView>
+
+    <LinearLayout
+        android:id="@+id/publicaccounts_nodata"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_marginBottom="5dip"
+            android:src="@drawable/nodata" >
+        </ImageView>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="还没有公共账号" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="" />
+    </LinearLayout>
+
+</LinearLayout>

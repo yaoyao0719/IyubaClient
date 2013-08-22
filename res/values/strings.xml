@@ -1,0 +1,70 @@
+<resources>
+
+    <string name="app_name">爱语吧</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section1">Section 1</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- 注册界面相关字符资源 -->
+    <string name="regist_title">用户注册</string>
+    <string name="regist_user_id_hint">输入用户ID</string>
+    <string name="regist_user_pwd_hint">输入密码</string>
+    <string name="regist_user_repwd_hint">确认密码</string>
+    <string name="regist_email_hint">有效email</string>
+    <string name="regist_check_username_1">4-10字</string>
+    <string name="regist_check_username_2">字母、数字或者下划线</string>
+    <string name="regist_check_userpwd_1">6-12字</string>
+    <string name="regist_check_userpwd_2">大小写字母、数字、符号</string>
+    <string name="regist_check_reuserpwd">两次密码不匹配！</string>
+    <string name="regist_check_email_1">用户email不能为空</string>
+    <string name="regist_check_email_2">请填写有效的email</string>
+    <string name="regist_check_realname">真实姓名不能为空</string>
+    <string name="tip_regist_success_text">注册成功！请登录！</string>
+    <string name="tip_article_updata_success_text">更新了%1$s篇文章！</string>
+    <string name="login_submit">登录</string>
+    <string name="login_register">注册</string>
+    <string name="login_cancel">取消</string>
+    <string name="login_userNameHint">请输入用户名</string>
+    <string name="login_realNameHint">请输入真实姓名</string>
+    <string name="login_emailHint">请输Email</string>
+    <string name="login_pwdHint">请输入密码</string>
+    <string name="login_repwdHint">请重复输入密码</string>
+
+    <!-- 用户登录界面相关字符资源 -->
+    <string name="login_title">用户登录</string>
+    <string name="login_remember_pwd">记住密码</string>
+    <string name="login_auto_login">自动登录</string>
+    <string name="login_check_user_id_null">用户ID不能为空</string>
+    <string name="login_check_effective_user_id">请填写有效的用户ID</string>
+    <string name="login_check_user_pwd_null">用户密码不能为空</string>
+    <string name="login_check_user_pwd_constraint">密码为6-12个字符</string>
+    <string name="login_faild">登录失败！请检查网络是否可用！</string>
+    <string name="tip_no_login_text">当前未登录！</string>
+    <string name="tip_login_success_text">欢迎回来，%1$s！</string>
+       <!-- alert窗口相关字符资源 -->
+    <string name="alert_exit_app">退出应用？</string>
+    <string name="alert_title">提示</string>
+    <string name="alert_btn_ok">确认</string>
+    <string name="alert_btn_cancel">取消</string>
+    
+        <!-- 关于界面相关字符资源 -->
+    <string name="about_title">关于</string>
+    <string name="about_update_alert_1">当前有新版本更新：</string>
+    <string name="about_update_alert_2">,是否要更新？</string>
+    <string name="about_update_running_title">更新应用</string>
+    <string name="about_update_running">正在更新，请稍后。。。</string>
+    <string name="about_error">服务器忙！请稍后下载！</string>
+    <string name="about_update_isnew">当前是最新版本</string>
+
+ <string name="attend">加关注</string>
+          
+    
+    <!-- 下拉刷新相关字符资源 -->
+    <string name="pull_to_refresh_pull_label">下拉刷新...</string>
+    <string name="pull_to_refresh_release_label">松开刷新...</string>
+    <string name="pull_to_refresh_refreshing_label">加载中...</string>
+    <string name="pull_to_refresh_tap_label">点击加载...</string>
+</resources>

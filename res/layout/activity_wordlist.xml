@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/titlebg" >
+
+        <Button
+            android:id="@+id/wordlist_back_btn"
+               android:layout_width="31.8dip"
+            android:layout_height="24dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/wordlist_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dip"
+            android:gravity="center"
+            android:text="生词本"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" 
+            
+            android:layout_centerVertical="true">
+        </TextView>
+
+
+        <ImageButton
+            android:id="@+id/tb_edit"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/image_button"
+            android:padding="10dp"
+            android:src="@drawable/edit_icon" />
+
+        <ImageButton
+            android:id="@+id/tb_synchronous"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_toLeftOf="@id/tb_edit"
+            android:background="@drawable/image_button"
+            android:padding="10dp"
+            android:src="@drawable/synchronous" />
+
+        <ImageButton
+            android:id="@+id/tb_history"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_toLeftOf="@id/tb_synchronous"
+            android:background="@drawable/image_button"
+            android:padding="10dp"
+            android:src="@drawable/history_icon"
+           />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/words_controlPanel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/words_delBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:text="删除"
+            android:textColor="#0e497b" />
+
+        <Button
+            android:id="@+id/words_restBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:text="恢复"
+            android:visibility="gone" 
+            android:textColor="#0e497b" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/wordsListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/words_controlPanel"
+        android:layout_below="@+id/titleBar"
+        android:cacheColorHint="#00000000"
+        android:descendantFocusability="afterDescendants"
+        android:divider="@drawable/line"
+        android:fastScrollEnabled="true"
+        android:smoothScrollbar="true" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/wordsList_noList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/titleBar"
+        android:gravity="center_vertical|center_horizontal|center" >
+
+        <TextView
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前无数据！" />
+    </RelativeLayout>
+
+</RelativeLayout>

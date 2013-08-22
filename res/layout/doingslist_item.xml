@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="10dip" >
+
+    <com.iyuba.iyubaclient.util.RoundAngleImageView
+        android:id="@+id/doingslist_userPortrait"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_margin="5dip"
+        android:src="@drawable/icon" 
+         android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="10dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="爱语吧"
+                android:textColor="#141414" 
+                android:id="@+id/doingslist_username"/>
+
+            <TextView
+                android:id="@+id/doingslist_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12-21 14:25"
+                android:textColor="#888888" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/doingslist_message"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐"
+                    android:textColor="#010101"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="right|center_horizontal|bottom" >
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dip"
+                    android:src="@drawable/shareicon" />
+
+                <TextView
+                    android:id="@+id/doingslist_replyNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:textColor="#a4b7d6" />
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dip"
+                    android:src="@drawable/replyicon" />
+
+                <TextView
+                    android:id="@+id/doingslist_shareNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textColor="#a4b7d6" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

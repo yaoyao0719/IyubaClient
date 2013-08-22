@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/regist_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/titlebg"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/register_back_btn"
+               android:layout_width="31.8dip"
+            android:layout_height="24dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="注册"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textColor="#ffffff" >
+        </TextView>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="15dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/register_loginName"
+                android:layout_width="306.5dip"
+                android:layout_height="45dip"
+                android:layout_marginBottom="10dip"
+                android:background="@drawable/login_edit"
+                android:ems="10"
+                android:hint="@string/login_userNameHint"
+                android:imeActionId="0"
+                android:imeOptions="actionNext"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                 android:textSize="18sp" 
+            android:textColor="#000000">
+                 
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/register_email"
+                android:layout_width="306.5dip"
+                android:layout_height="45dip"
+                android:layout_marginBottom="10dip"
+                android:background="@drawable/login_edit"
+                android:ems="10"
+                android:hint="@string/login_emailHint"
+                android:imeActionId="2"
+                android:imeOptions="actionNext"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true" 
+                 android:textSize="18sp" 
+            android:textColor="#000000"
+                />
+
+            <EditText
+                android:id="@+id/register_loginPwd"
+                android:layout_width="306.5dip"
+                android:layout_height="45dip"
+                android:layout_marginBottom="10dip"
+                android:background="@drawable/login_edit"
+                android:ems="10"
+                android:hint="@string/login_pwdHint"
+                android:imeActionId="3"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true" 
+                 android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/register_reLoginPwd"
+                android:layout_width="306.5dip"
+                android:layout_height="45dip"
+                android:layout_marginBottom="10dip"
+                android:background="@drawable/login_edit"
+                android:ems="10"
+                android:hint="@string/login_repwdHint"
+                android:imeActionId="4"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                 android:textColor="#000000" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal|center" >
+
+                <Button
+                    android:id="@+id/register_registerBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/regist"
+                    android:text="注册"
+                    android:textColor="#ffffff"
+                    android:textSize="16.0sp" />
+
+                <Button
+                    android:id="@+id/register_cancelBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/login"
+                    android:text="取消"
+                    android:textColor="#ffffff"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

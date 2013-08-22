@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/titlebg" >
+
+        <ImageView
+            android:id="@+id/app_image"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/navigation_home2" />
+
+        <TextView
+            android:id="@+id/app_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="应用广场"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/app_down"
+            android:layout_width="20dip"
+            android:layout_height="19.5dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:src="@drawable/down" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="136dip"
+                android:layout_height="62dip"
+                android:layout_gravity="center"
+                android:layout_margin="15dip"
+                android:src="@drawable/iyubalogo" />
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip" >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip" >
+
+                    <LinearLayout
+                        android:layout_width="85dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:id="@+id/voa" >
+
+                        <ImageView
+                            android:layout_width="65dip"
+                            android:layout_height="65dip"
+                            android:layout_marginBottom="5dip"
+                            android:src="@drawable/voa" />
+
+                        <TextView
+                            android:layout_width="80dip"
+                            android:layout_height="wrap_content"
+                            android:text="VOA慢速"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="85dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" 
+                        android:id="@+id/csvoa">
+
+                        <ImageView
+                            android:layout_width="65dip"
+                            android:layout_height="65dip"
+                            android:layout_marginBottom="5dip"
+                            android:src="@drawable/csvoa" />
+
+                        <TextView
+                            android:layout_width="80dip"
+                            android:layout_height="wrap_content"
+                            android:text="VOA常速"
+                            android:textColor="#000000"
+                            android:textSize="13sp" 
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="85dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:id="@+id/voavideo" >
+
+                        <ImageView
+                            android:layout_width="65dip"
+                            android:layout_height="65dip"
+                            android:layout_marginBottom="5dip"
+                            android:src="@drawable/voavideo" />
+
+                        <TextView
+                            android:layout_width="80dip"
+                            android:layout_height="wrap_content"
+                            android:text="VOA英语视频"
+                            android:textColor="#000000"
+                            android:textSize="13sp" 
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="85dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:id="@+id/bbc" >
+
+                        <ImageView
+                            android:layout_width="65dip"
+                            android:layout_height="65dip"
+                            android:layout_marginBottom="5dip"
+                            android:src="@drawable/bbc" />
+
+                        <TextView
+                            android:layout_width="80dip"
+                            android:layout_height="wrap_content"
+                            android:text="BBC英语"
+                            android:textColor="#000000"
+                            android:textSize="13sp" 
+                            android:gravity="center"/>
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip" >
+
+                    <LinearLayout
+                        android:layout_width="85dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:id="@+id/cet4" >
+
+                        <ImageView
+                            android:layout_width="65dip"
+                            android:layout_height="65dip"
+                            android:layout_marginBottom="5dip"
+                            android:src="@drawable/cet4" />
+
+                        <TextView
+                            android:layout_width="80dip"
+                            android:layout_height="wrap_content"
+                            android:text="四级听力"
+                            android:textColor="#000000"
+                            android:textSize="13sp" 
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="85dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:id="@+id/cet6" >
+
+                        <ImageView
+                            android:layout_width="65dip"
+                            android:layout_height="65dip"
+                            android:layout_marginBottom="5dip"
+                            android:src="@drawable/cet6" 
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="80dip"
+                            android:layout_height="wrap_content"
+                            android:text="六级听力"
+                            android:textColor="#000000"
+                            android:textSize="13sp" 
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="85dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:id="@+id/read4" >
+
+                        <ImageView
+                            android:layout_width="65dip"
+                            android:layout_height="65dip"
+                            android:layout_marginBottom="5dip"
+                            android:src="@drawable/read4" />
+
+                        <TextView
+                            android:layout_width="80dip"
+                            android:layout_height="wrap_content"
+                            android:text="四级阅读"
+                            android:textColor="#000000"
+                            android:textSize="13sp" 
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="85dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:id="@+id/read6" >
+
+                        <ImageView
+                            android:layout_width="65dip"
+                            android:layout_height="65dip"
+                            android:layout_marginBottom="5dip"
+                            android:src="@drawable/read6" />
+
+                        <TextView
+                            android:layout_width="80dip"
+                            android:layout_height="wrap_content"
+                            android:text="六级阅读"
+                            android:textColor="#000000"
+                            android:textSize="13sp" 
+                            android:gravity="center"/>
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip" >
+
+                    <LinearLayout
+                        android:layout_width="85dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:id="@+id/meiyu" >
+
+                        <ImageView
+                            android:layout_width="65dip"
+                            android:layout_height="65dip"
+                            android:layout_marginBottom="5dip"
+                            android:src="@drawable/meiyu" />
+
+                        <TextView
+                            android:layout_width="80dip"
+                            android:layout_height="wrap_content"
+                            android:text="美语怎么说"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="85dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:id="@+id/song" >
+
+                        <ImageView
+                            android:layout_width="65dip"
+                            android:layout_height="65dip"
+                            android:layout_marginBottom="5dip"
+                            android:src="@drawable/song" />
+
+                        <TextView
+                            android:layout_width="80dip"
+                            android:layout_height="wrap_content"
+                            android:text="听歌学英语"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="85dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:id="@+id/toeic" >
+
+                        <ImageView
+                            android:layout_width="65dip"
+                            android:layout_height="65dip"
+                            android:layout_marginBottom="5dip"
+                            android:src="@drawable/toeic" />
+
+                        <TextView
+                            android:layout_width="80dip"
+                            android:layout_height="wrap_content"
+                            android:text="托业听力"
+                            android:textColor="#000000"
+                            android:textSize="13sp" 
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="85dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:id="@+id/toefl" >
+
+                        <ImageView
+                            android:layout_width="65dip"
+                            android:layout_height="65dip"
+                            android:layout_marginBottom="5dip"
+                            android:src="@drawable/toefl" />
+
+                        <TextView
+                            android:layout_width="80dip"
+                            android:layout_height="wrap_content"
+                            android:text="托福听力"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="85dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:id="@+id/jlpt1" >
+
+                        <ImageView
+                            android:layout_width="65dip"
+                            android:layout_height="65dip"
+                            android:layout_marginBottom="5dip"
+                            android:src="@drawable/jlpt1" />
+
+                        <TextView
+                            android:layout_width="80dip"
+                            android:layout_height="wrap_content"
+                            android:text="日语一级"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="85dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:id="@+id/jlpt2" >
+
+                        <ImageView
+                            android:layout_width="65dip"
+                            android:layout_height="65dip"
+                            android:layout_marginBottom="5dip"
+                            android:src="@drawable/jlpt2" />
+
+                        <TextView
+                            android:layout_width="80dip"
+                            android:layout_height="wrap_content"
+                            android:text="日语二级"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="85dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" 
+                        android:id="@+id/jlpt3">
+
+                        <ImageView
+                            android:layout_width="65dip"
+                            android:layout_height="65dip"
+                            android:layout_marginBottom="5dip"
+                            android:src="@drawable/jlpt3" />
+
+                        <TextView
+                            android:layout_width="80dip"
+                            android:layout_height="wrap_content"
+                            android:text="日语三级"
+                            android:textColor="#000000"
+                            android:textSize="13sp" 
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="85dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" 
+                        android:id="@+id/kaoyan">
+
+                        <ImageView
+                            android:layout_width="65dip"
+                            android:layout_height="65dip"
+                            android:layout_marginBottom="5dip"
+                            android:src="@drawable/kaoyan" />
+
+                        <TextView
+                            android:layout_width="80dip"
+                            android:layout_height="wrap_content"
+                            android:text="考研英语阅读"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

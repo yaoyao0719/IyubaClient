@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:orientation="vertical"
+    android:paddingRight="10dip" >
+
+    <TextView
+        android:id="@+id/blogSubject"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingLeft="10dip"
+        android:paddingTop="2dip"
+        android:text="今天是元旦，好开心那，哇哈哈哈哈哈哈哈哈哈哈哈啊哈哇哈哈哈哈哈哈哈哈哈哈哈啊哈哇哈哈哈哈哈哈哈哈哈哈哈啊哈"
+        android:textColor="#0d568b"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip" >
+
+        <TextView
+            android:id="@+id/blogTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12-21 14:25"
+            android:textColor="#7a8084" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical" >
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dip"
+                android:src="@drawable/replyicon" />
+
+            <TextView
+                android:id="@+id/blogReplyNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textColor="#7a8084" />
+            <!--
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dip"
+                android:src="@drawable/shareicon" />
+
+            <TextView
+                android:id="@+id/blogShareNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5" />
+            -->
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

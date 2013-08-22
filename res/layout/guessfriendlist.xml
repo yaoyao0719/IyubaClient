@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+    
+
+    <com.iyuba.iyubaclient.widget.pulltorefresh.PullToRefreshListView
+        android:id="@+id/guesslist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#000000"
+        android:divider="#b1b6b9"
+        android:dividerHeight="1dip"
+        android:fastScrollEnabled="true"
+       
+         >
+    </com.iyuba.iyubaclient.widget.pulltorefresh.PullToRefreshListView>
+     <TextView
+        android:id="@+id/guess_nodata"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="15dip"
+        android:text="下拉刷新一下试试吧"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#0e497b"
+         android:visibility="gone"
+        />
+    
+</LinearLayout>

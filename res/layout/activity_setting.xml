@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/titlebg" >
+
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" >
+        </TextView>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="10dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_setting_panel_background"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/setting_account"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="41dip"
+                        android:layout_height="25.5dip"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/settings_account" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="账号管理"
+                        android:textColor="#0e497b" />
+
+                    <ImageView
+                        android:layout_width="7dip"
+                        android:layout_height="12.6dip"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/setting_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+
+            
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_setting_panel_background"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/setting_about"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="41dip"
+                        android:layout_height="25.5dip"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/iyuba" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="关于爱语吧"
+                        android:textColor="#0e497b" />
+
+                    <ImageView
+                        android:layout_width="7dip"
+                        android:layout_height="12.6dip"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/setting_arrow" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#dcdcdc" />
+
+                <LinearLayout
+                    android:id="@+id/setting_update"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="41dip"
+                        android:layout_height="25.5dip"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/settings_help" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:text="新版本检测"
+                        android:textColor="#0e497b" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar_update"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="7dip"
+                        android:layout_height="12.6dip"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/setting_arrow" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#dcdcdc" />
+
+                <LinearLayout
+                    android:id="@+id/setting_help"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="41dip"
+                        android:layout_height="25.5dip"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/settings_help" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="使用帮助"
+                        android:textColor="#0e497b" />
+
+                    <ImageView
+                        android:layout_width="7dip"
+                        android:layout_height="12.6dip"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/setting_arrow" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#dcdcdc" />
+
+                <LinearLayout
+                    android:id="@+id/setting_feedback"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="41dip"
+                        android:layout_height="25.5dip"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/settings_feedback" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="意见反馈"
+                        android:textColor="#0e497b" />
+
+                    <ImageView
+                        android:layout_width="7dip"
+                        android:layout_height="12.6dip"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/setting_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+<LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_setting_panel_background"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/voachangsu_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="41dip"
+                        android:layout_height="25.5dip"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/app" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="VOA常速英语"
+                        android:textColor="#0e497b" />
+
+                    <ImageView
+                        android:layout_width="7dip"
+                        android:layout_height="12.6dip"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/setting_arrow" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#dcdcdc" />
+
+                <LinearLayout
+                    android:id="@+id/song"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="41dip"
+                        android:layout_height="25.5dip"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/app" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="听歌学英语"
+                        android:textColor="#0e497b" />
+
+                    <ImageView
+                        android:layout_width="7dip"
+                        android:layout_height="12.6dip"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/setting_arrow" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#dcdcdc" />
+
+                <LinearLayout
+                    android:id="@+id/meiyuzenmshuo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="41dip"
+                        android:layout_height="25.5dip"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/app" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="美语怎么说"
+                        android:textColor="#0e497b" />
+
+                    <ImageView
+                        android:layout_width="7dip"
+                        android:layout_height="12.6dip"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/setting_arrow" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#dcdcdc" />
+
+                <LinearLayout
+                    android:id="@+id/voavideo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="41dip"
+                        android:layout_height="25.5dip"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/app" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="VOA英语视频"
+                        android:textColor="#0e497b" />
+
+                    <ImageView
+                        android:layout_width="7dip"
+                        android:layout_height="12.6dip"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/setting_arrow" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#dcdcdc" />
+
+                <LinearLayout
+                    android:id="@+id/cet4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="41dip"
+                        android:layout_height="25.5dip"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/app" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="英语四级听力"
+                        android:textColor="#0e497b" />
+
+                    <ImageView
+                        android:layout_width="7dip"
+                        android:layout_height="12.6dip"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/setting_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/setting_exit"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:layout_marginBottom="15dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/shape_setting_panel_background"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:layout_marginLeft="10dip"
+                    android:layout_width="41dip"
+                    android:layout_height="25.5dip"
+                    android:layout_marginRight="10dip"
+                    android:src="@drawable/settings_exit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="退出当前账号"
+                    android:textColor="#0e497b" />
+
+                <ImageView
+                    android:layout_width="7dip"
+                    android:layout_height="12.6dip"
+                    android:layout_marginRight="10dip"
+                    android:src="@drawable/setting_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

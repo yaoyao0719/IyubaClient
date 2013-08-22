@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/regist_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/titlebg" 
+        android:id="@+id/title">
+
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="登录"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textColor="#ffffff" >
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="20dip"
+        android:orientation="vertical" 
+        android:layout_below="@+id/title">
+
+        <TextView
+            android:id="@+id/textview_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/login_username"
+            android:paddingBottom="5dp"
+            android:paddingLeft="7dip"
+            android:text="登录名"
+            android:textSize="18sp" 
+            android:textColor="#000000"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/login_username"
+            android:layout_width="306.5dip"
+            android:layout_height="45dip"
+            android:layout_below="@+id/textview_login"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dip"
+            android:background="@drawable/login_edit"
+            android:cursorVisible="true"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:maxLength="64"
+            android:singleLine="true"
+            android:paddingLeft="10dip"
+            android:textColor="@android:color/black" 
+            android:textCursorDrawable="@null"/>
+
+        <TextView
+            android:id="@+id/textview_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/login_username"
+            android:layout_below="@+id/login_username"
+            android:paddingBottom="5dp"
+            android:paddingLeft="7dip"
+            android:text="密码"
+           android:textSize="18sp" 
+            android:textColor="#000000">
+ 
+        </TextView>
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="306.5dip"
+            android:layout_height="45dip"
+            android:layout_alignLeft="@+id/login_username"
+            android:layout_below="@+id/textview_password"
+            android:layout_marginBottom="10dip"
+            android:background="@drawable/login_edit"
+            android:imeActionId="1"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:paddingLeft="10dip"
+            android:textColor="@android:color/black"
+             android:textCursorDrawable="@null" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_Btns"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center_horizontal" 
+        android:layout_below="@+id/login_input">
+
+        <Button
+            android:id="@+id/bnRegist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6.0dip"
+            android:background="@drawable/regist"
+            android:text="注册"
+            android:textColor="@color/switch_user_login_btn"
+            android:textSize="16.0sp" />
+
+        <Button
+            android:id="@+id/bnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.0dip"
+            android:layout_toRightOf="@+id/bnRegist"
+            android:background="@drawable/login"
+            android:text="登录"
+            android:textColor="@color/switch_user_login_btn"
+            android:textSize="16.0sp" 
+            android:layout_alignBaseline="@+id/bnRegist"/>
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码"
+            android:autoLink="web"
+            android:layout_below="@+id/bnLogin"
+            android:layout_alignRight="@+id/bnLogin"
+            android:textSize="14sp"
+            android:layout_marginTop="10dip"
+            android:id="@+id/forgetpassword"
+   />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="right"
+        android:layout_marginTop="10dip"
+        android:layout_alignRight="@+id/login_Btns"
+        android:layout_below="@+id/login_Btns">
+      
+    </RelativeLayout>
+</RelativeLayout>

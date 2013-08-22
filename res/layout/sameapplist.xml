@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background" >
+        <com.iyuba.iyubaclient.widget.pulltorefresh.PullToRefreshListView
+        android:id="@+id/sameapplist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#000000"
+        android:divider="#b1b6b9"
+        android:dividerHeight="1dip"
+        android:fastScrollEnabled="true"
+       
+         >
+    </com.iyuba.iyubaclient.widget.pulltorefresh.PullToRefreshListView>
+ <LinearLayout
+        android:id="@+id/sameapp_nodata"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:orientation="vertical"
+         >
+
+        <ImageView
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_marginBottom="5dip"
+            android:src="@drawable/nodata" >
+        </ImageView>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="还没有共同应用的好友哦，" 
+            />
+             <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="赶紧去应用广场寻找志同道合的人吧~~~" 
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

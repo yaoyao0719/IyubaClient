@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical" >
+
+    <GridView
+        android:id="@+id/blog_sendmsg_gvemotion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#d1d8e3"
+        android:columnWidth="20dip"    
+        android:padding="5dip"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:scrollbars="vertical"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dip"
+        android:horizontalSpacing="10dip"
+         >
+    </GridView>
+
+</LinearLayout>

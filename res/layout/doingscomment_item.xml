@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ 
+    android:paddingRight="10dip" xmlns:app="http://schemas.android.com/apk/res/com.iyuba.iyubaclient">
+
+    <com.iyuba.iyubaclient.util.RoundAngleImageView
+        android:id="@+id/doingscomment_userPortrait"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_margin="5dip"
+        android:src="@drawable/icon"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="10dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="爱语吧"
+                android:textColor="#0e497b" 
+                android:id="@+id/doingscomment_username"/>
+
+            <TextView
+                android:id="@+id/doingscomment_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12-21 14:25"
+                android:textColor="#888888" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" 
+                android:layout_marginRight="5dip">
+
+                <TextView
+                    android:id="@+id/doingscomment_message"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:textColor="#424b53"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:gravity="right|center_horizontal" >
+
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="27.3dip"
+                    android:src="@drawable/replyicon" 
+                    android:id="@+id/replycomment"></ImageView>"
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

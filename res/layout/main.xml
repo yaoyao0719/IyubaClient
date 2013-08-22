@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+
+    <ViewAnimator
+        android:id="@+id/containerBody"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/changzhutiao"
+        android:layout_weight="1"
+        android:measureAllChildren="true" >
+    </ViewAnimator>
+
+    <LinearLayout
+        android:id="@+id/changzhutiao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tabbar_bg"
+        android:baselineAligned="false"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/homelayout"
+            android:layout_width="0dip"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/btn_home"
+                    android:layout_width="32dip"
+                    android:layout_height="32dip"
+                    android:src="@drawable/homeicon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="13dip"
+                    android:layout_below="@+id/btn_home"
+                    android:text="首页"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/msg_toastbg"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/applicationlayout"
+            android:layout_width="0dip"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/btn_application"
+                    android:layout_width="32dip"
+                    android:layout_height="32dip"
+                    android:src="@drawable/applicationicon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="13dip"
+                    android:layout_below="@+id/btn_application"
+                    android:text="应用"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/msg_toastbg"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/messagelayout"
+            android:layout_width="0dip"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/btn_message"
+                    android:layout_width="32dip"
+                    android:layout_height="32dip"
+                    android:src="@drawable/messageicon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="13dip"
+                    android:layout_below="@+id/btn_message"
+                    android:text="消息"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/messagenewinfo"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/msg_toastbg"
+                android:gravity="center"
+                android:text="" 
+                android:textSize="13sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/friendlayout"
+            android:layout_width="0dip"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/btn_friend"
+                    android:layout_width="32dip"
+                    android:layout_height="32dip"
+                    android:src="@drawable/friendicon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="13dip"
+                    android:layout_below="@+id/btn_friend"
+                    android:text="好友"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/friendnewinfo"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/msg_toastbg"
+                android:gravity="center"
+                android:text=""
+                 android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/settinglayout"
+            android:layout_width="0dip"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/btn_setting"
+                    android:layout_width="32dip"
+                    android:layout_height="32dip"
+                    android:src="@drawable/settingicon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="13dip"
+                    android:layout_below="@+id/btn_setting"
+                    android:text="设置"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

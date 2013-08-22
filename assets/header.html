@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	
+	<title>Slides, A Slideshow Plugin for jQuery</title>
+	
+	<link rel="stylesheet" href="css/global.css" type="text/css">
+	<script src='jquery.js'></script>
+		<script src='rangy-core.js'></script>
+		<script src='rangy-serializer.js'></script>
+		<script src='android.selection.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script src="js/slides.min.jquery.js"></script>
+	<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="container">
+		<div id="example">		
+			<div id="slides">
+				<div class="slides_container">
+					<div class="slide">
+						<a href="webApp.jsp?id=2" title="" ><img src="img/cet-webAds.png" width="650px" height="200px" alt="Slide 1"></a>
+						<div class="caption" style="bottom:0">
+							<p>英语四六级听力</p>
+						</div>
+					</div>
+					<div class="slide">
+						<a href="webApp.jsp?id=4" title="" ><img src="img/voaS-webAds.png" width="650px" height="200px" alt="Slide 2"></a>
+						<div class="caption">
+							<p>VOA慢速英语</p>
+						</div>
+					</div>
+					<div class="slide">
+						<a href="webApp.jsp?id=13" title="" ><img src="img/voaStandard-webAds.png" width="650px" height="200px" alt="Slide 3"></a>
+						<div class="caption">
+							<p>VOA常速英语</p>
+						</div>
+					</div>
+					<div class="slide">
+						<a href="webApp.jsp?id=9" title="" ><img src="img/bbc-webAds.png" width="650px" height="200px" alt="Slide 4"></a>
+						<div class="caption">
+							<p>BBC六分钟英语</p>
+						</div>
+					</div>
+					<div class="slide">
+						<a href="androidApp.jsp?id=209" title="" ><img src="img/music-webAds.png" width="650px" height="200px" alt="Slide 5"></a>
+						<div class="caption">
+							<p>听歌学英语</p>
+						</div>
+					</div>			
+				</div>
+				<a href="#" class="prev"><img src="img/left.png" width="24" height="43" alt="Arrow Prev"></a>
+				<a href="#" class="next"><img src="img/right.png" width="24" height="43" alt="Arrow Next"></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

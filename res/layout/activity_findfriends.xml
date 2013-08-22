@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+  android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/titlebg"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/findfriend_back_btn"
+            android:layout_width="31.8dip"
+            android:layout_height="24dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/back"
+            android:textColor="#57616c"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="找朋友"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" >
+        </TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="52dip"
+        android:layout_marginTop="5dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="60dip"
+            android:layout_height="52dip"
+            android:layout_marginRight="15dip" >
+
+            <Button
+                android:id="@+id/findfriend_guess"
+                android:layout_width="60dip"
+                android:layout_height="52dip"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/guess"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/findfriend_guess_press"
+                android:layout_width="60dip"
+                android:layout_height="52dip"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/guess_press"
+                android:gravity="center" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="60dip"
+            android:layout_height="52dip"
+            android:layout_marginRight="15dip" >
+
+            <Button
+                android:id="@+id/findfriend_near"
+                android:layout_width="60dip"
+                android:layout_height="52dip"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/near"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/findfriend_near_press"
+                android:layout_width="60dip"
+                android:layout_height="52dip"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/near_press"
+                android:gravity="center" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="60dip"
+            android:layout_height="52dip" 
+           android:layout_marginRight="15dip" >
+
+
+            <Button
+                android:id="@+id/findfriend_sameapp"
+                android:layout_width="60dip"
+                android:layout_height="52dip"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/sameapp"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/findfriend_sameapp_press"
+                android:layout_width="60dip"
+                android:layout_height="52dip"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/sameapp_press"
+                android:gravity="center" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="60dip"
+            android:layout_height="52dip" >
+
+            <Button
+                android:id="@+id/findfriend_publicaccounts"
+                android:layout_width="60dip"
+                android:layout_height="52dip"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/publicaccounts"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/findfriend_publicaccounts_press"
+                android:layout_width="60dip"
+                android:layout_height="52dip"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/publicaccounts_press"
+                android:gravity="center" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="5dip"
+        android:background="#b1b6b9" >
+    </ImageView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/findfriend_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+</LinearLayout>

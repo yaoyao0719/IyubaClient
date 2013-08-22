@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"    
+   >
+   
+   <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:layout_marginTop="46dp"
+     >
+
+       <LinearLayout
+           android:id="@+id/main_dialog_layout"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:background="@drawable/di"
+           android:orientation="vertical"
+           android:layout_marginLeft="7dip" 
+            >
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" 
+               android:layout_marginTop="12dip"
+               android:id="@+id/writeiyu">
+
+               <ImageView
+                   android:id="@+id/imageView1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:layout_marginLeft="8dp"
+                   android:src="@drawable/iyu" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="10dp"
+                   android:text="写i语"
+                   android:textColor="#ffffff"
+                   android:textSize="18sp" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" 
+               android:id="@+id/writeblog">
+
+               <ImageView
+                   android:id="@+id/imageView2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:layout_marginLeft="8dp"
+                   android:src="@drawable/rizhi" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="8dp"
+                   android:text="写日志"
+                   android:textColor="#ffffff"
+                   android:textSize="18sp" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/report" >
+
+               <ImageView
+                   android:id="@+id/imageView3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:layout_marginLeft="8dp"
+                   android:src="@drawable/baodao" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="8dp"
+                   android:text="报到"
+                   android:textColor="#ffffff"
+                   android:textSize="18sp" />
+           </LinearLayout>
+
+        
+       </LinearLayout>
+   </RelativeLayout>
+
+</RelativeLayout>

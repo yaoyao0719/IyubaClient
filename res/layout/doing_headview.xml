@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/commentlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.iyuba.iyubaclient.util.RoundAngleImageView
+            android:id="@+id/doings_userPortrait"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_margin="10dip"
+            android:src="@drawable/defaultavatar"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/doings_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:layout_weight="1"
+                android:text="爱语吧"
+                android:textColor="#0e497b"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/doings_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:text="新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐"
+                android:textColor="#424b53"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/doings_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:text="12-21 14:25"
+                android:textColor="#888888" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dip"
+        android:layout_marginRight="0dip"
+        android:background="#afcbdf" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dip"
+            android:text="评论："
+            android:textColor="#215f91"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/doings_replynum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textColor="#215f91"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

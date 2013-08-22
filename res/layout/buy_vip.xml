@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_title_and_back"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/titlebg" >
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="31.8dip"
+            android:layout_height="24dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/back"
+            android:textColor="#57616c"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/play_title_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="商店"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_noLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/button_to_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="您还未登录！请登录！" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout_title_and_back" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/iyubalogo" />
+
+            <RelativeLayout
+                android:id="@+id/row0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ren"
+                    android:gravity="center_vertical"
+                    android:text="  当前用户："
+                    android:textColor="#8B4513"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/buy_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView1"
+                    android:layout_alignBottom="@+id/textView1"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@+id/textView1"
+                    android:gravity="center_vertical"
+                    android:text="爱语吧"
+                    android:textColor="#8B4513"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView1"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/coin"
+                    android:gravity="center_vertical"
+                    android:text="  语币余额："
+                    android:textColor="#8B4513"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/buy_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView2"
+                    android:layout_alignBottom="@+id/textView2"
+                    android:layout_alignLeft="@+id/buy_username"
+                    android:gravity="center_vertical"
+                    android:text="0"
+                    android:textColor="#8B4513"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/row0"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="请选择您要开通的VIP期限："
+                android:textColor="#8c4716" />
+
+            <RelativeLayout
+                android:id="@+id/row1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp" >
+
+                <ImageView
+                    android:id="@+id/quarter"
+                    android:layout_width="120dip"
+                    android:layout_height="114dip"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/onemounth" />
+
+                <ImageView
+                    android:id="@+id/half_year"
+                    android:layout_width="120dip"
+                    android:layout_height="114dip"
+                    android:layout_alignTop="@+id/quarter"
+                    android:layout_toRightOf="@+id/quarter"
+                    android:src="@drawable/threemonth" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/row1"
+                android:layout_centerHorizontal="true" >
+
+                <ImageView
+                    android:id="@+id/year"
+                    android:layout_width="120dip"
+                    android:layout_height="114dip"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/sixmonth" />
+
+                <ImageView
+                    android:id="@+id/life_long"
+                    android:layout_width="120dip"
+                    android:layout_height="114dip"
+                    android:layout_alignTop="@+id/year"
+                    android:layout_toRightOf="@+id/year"
+                    android:src="@drawable/oneyear" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/row2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp" >
+
+                <Button
+                    android:id="@+id/buy_iyubi"
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yellowbutton"
+                    android:text="购买爱语币"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/space"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/buy_iyubi"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

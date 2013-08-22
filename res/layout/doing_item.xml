@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+             
+                android:orientation="vertical"
+                android:paddingRight="10dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:gravity="center_vertical" >
+
+                    <com.iyuba.iyubaclient.util.RoundAngleImageView
+                        android:id="@+id/doings_userPortrait"
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:layout_margin="10dip"
+                        android:src="@drawable/defaultavatar"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/doings_username"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="爱语吧"
+                        android:textColor="#141414"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="15dip"
+                        android:layout_height="15dip"
+                        android:src="@drawable/triangle" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/doings_message"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:text="新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐"
+                        android:textColor="#010101"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:src="@drawable/line" />
+
+                    <TextView
+                        android:id="@+id/doings_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dip"
+                        android:text="12-21 14:25"
+                        android:textColor="#888888" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="转发:"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="16sp"
+                            android:id="@+id/doings_sharenum" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dip"
+                            android:layout_margin="5dip"
+                            android:src="@drawable/verticalline" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="评论:"
+                            android:textColor="#5d6670"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10"
+                            android:textColor="#5d6670"
+                            android:textSize="16sp"
+                             android:id="@+id/doings_replynum"  />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:src="@drawable/line" />
+                </LinearLayout>
+            </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/titlebg"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/publish_mood_btn"
+            android:layout_width="28dip"
+            android:layout_height="27.5dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/mainmenuxml"
+       
+             />
+
+
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="0dip"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="2dip"
+            android:paddingRight="2dip"
+            android:text="首页"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <Button
+            android:id="@+id/refresh_btn"
+            android:layout_width="31dip"
+            android:layout_height="28.5dip"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/refresh" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/wordlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:background="@drawable/wordlayoutbg" >
+
+        <ImageView
+            android:id="@+id/wordspeaker"
+            android:layout_width="35dip"
+            android:layout_height="32dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:src="@drawable/spaker" />
+
+        <TextView
+            android:id="@+id/autoscrolltextview"
+            android:layout_width="wrap_content"
+            android:layout_height="42dip"
+            android:layout_toRightOf="@+id/wordspeaker"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:text="about [ffff]"
+            android:textColor="#0e588e"
+            android:textSize="18sp"
+            android:textStyle="bold" 
+            android:layout_marginRight="10dip"/>
+
+        <ImageView
+            android:id="@+id/wordsadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/addword"
+            android:layout_toRightOf="@+id/autoscrolltextview"
+           />
+          <ImageView
+            android:id="@+id/hasadded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/hasadded"
+            android:layout_toRightOf="@+id/autoscrolltextview"
+            android:visibility="gone"
+           />
+        
+        <ScrollView
+            android:id="@+id/wordScroll"
+            android:layout_width="fill_parent"
+            android:layout_height="150dip"
+            android:layout_below="@+id/autoscrolltextview"
+            android:paddingBottom="10dip" 
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/divider" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dip"
+                    android:paddingRight="8dip"
+                    android:text="☞单词释义"
+                    android:textColor="#0e588e"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/worddef"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dip"
+                    android:paddingRight="8dip"
+                    android:text="saasdsadasd"
+                    android:textColor="#0e588e"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dip"
+                    android:paddingRight="8dip"
+                    android:text="☞ 例句"
+                    android:textColor="#0e588e"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/wordsentence"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dip"
+                    android:paddingRight="8dip"
+                    android:text="saasdsadasd"
+                    android:textColor="#0e588e"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/wordsopen"
+            android:layout_width="15dip"
+            android:layout_height="15dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dip"
+            android:layout_marginTop="15dip"
+            android:src="@drawable/words_open" />
+
+        <ImageView
+            android:id="@+id/wordsup"
+            android:layout_width="15dip"
+            android:layout_height="15dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dip"
+            android:layout_marginTop="15dip"
+            android:src="@drawable/words_up"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.iyuba.iyubaclient.widget.pulltorefresh.PullToRefreshListView
+        android:id="@+id/newsListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/wordlayout"
+        android:cacheColorHint="#00000000"
+        android:descendantFocusability="afterDescendants"
+        android:divider="#b1b6b9"
+        android:dividerHeight="1dip"
+        android:smoothScrollbar="true" >
+    </com.iyuba.iyubaclient.widget.pulltorefresh.PullToRefreshListView>
+
+</RelativeLayout>

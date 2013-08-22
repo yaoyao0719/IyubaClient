@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/lyMainInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_mybg" >
+
+        <com.iyuba.iyubaclient.util.RoundAngleImageView
+            android:id="@+id/ivPortrait"
+            android:layout_width="@dimen/user_info_portrait_width"
+            android:layout_height="@dimen/user_info_portrait_height"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="16.0dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/portrait" />
+
+        <ImageView
+            android:id="@+id/ivPortraitMask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ivPortrait"
+            android:layout_alignRight="@+id/ivPortrait"
+            android:layout_marginBottom="-5.0dip"
+            android:layout_marginRight="-5.0dip"
+            android:src="@drawable/portrait_v_yellow"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/lyNick"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="16.0dip"
+            android:layout_toRightOf="@+id/ivPortrait"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="25dip"
+                android:layout_gravity="left|center_vertical"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingRight="25dp"
+                android:singleLine="true"
+                android:text="iyubassaaasdsadsdasdada"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/lyNickRight"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="right" >
+
+                <ImageView
+                    android:id="@+id/ivGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5.0dip" />
+
+                <ImageView
+                    android:id="@+id/ivLeaguer"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="0dip"
+                    android:src="@drawable/userinfo_membership"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lyNick"
+            android:layout_toRightOf="@+id/ivPortrait"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="积分:"
+                android:textColor="#ffffff"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000"
+                android:textColor="#eea941"
+                android:textStyle="bold" 
+                android:layout_marginRight="10dip">
+            </TextView>
+
+            <ImageView
+                android:layout_width="53dip"
+                android:layout_height="31dip"
+                android:src="@drawable/level1"
+                android:id="@+id/personalhome_level" >
+            </ImageView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/lyBtns"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ivPortrait"
+            android:layout_alignLeft="@+id/lyNick"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="10.0dip" >
+            <LinearLayout
+                android:id="@+id/distance_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="30.0dip"
+                android:gravity="center_vertical">
+            <ImageView
+                android:src="@drawable/weizhi"
+                android:layout_width="17dip"
+                android:layout_height="18dip"
+                android:id="@+id/weizhi"
+                 android:layout_centerVertical="true"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="距离:"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:id="@+id/juli"
+                android:layout_toRightOf="@+id/weizhi" />
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="1000米"
+                android:textColor="#eea941"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/juli" />
+</LinearLayout>
+            <FrameLayout
+                android:id="@+id/lyEditRelation"
+                android:layout_width="80.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/userinfo_relationship_invitebutton"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/tvEditRelation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/userinfo_relationship_indicator_arrow"
+                    android:drawablePadding="3.0dip"
+                    android:gravity="center"
+                    android:text="@string/attend"
+                    android:textColor="@color/getfriend_contacts_invite_text"
+                    android:textSize="12.0sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/lyEditInfo"
+                android:layout_width="80.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/userinfo_relationship_invitebutton"
+                android:clickable="true"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tvEditInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="编辑"
+                    android:textColor="@color/getfriend_contacts_invite_text"
+                    android:textSize="12.0sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/lyAddFan"
+                android:layout_width="80.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/userinfo_relationship_invitebutton"
+                android:clickable="true"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tvAddFan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/add"
+                    android:gravity="center"
+                    android:text="加关注"
+                    android:textColor="@color/getfriend_contacts_invite_text"
+                    android:textSize="12.0sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/lyCancelFan"
+                android:layout_width="80.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/userinfo_relationship_invitebutton"
+                android:clickable="true"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tvCancelFan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="取消关注"
+                    android:textColor="@color/getfriend_contacts_invite_text"
+                    android:textSize="12.0sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/lyMutualFan"
+                android:layout_width="85.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/userinfo_relationship_invitebutton"
+                android:clickable="true"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tvMutualFan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/mutual"
+                    android:gravity="center"
+                    android:text="相互关注"
+                    android:textColor="@color/getfriend_contacts_invite_text"
+                    android:textSize="12.0sp" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/lyVerifyInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="28.0dip"
+            android:layout_alignLeft="@+id/ivPortrait"
+            android:layout_below="@+id/ivPortrait"
+            android:layout_marginRight="5.0dip"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tvStateInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ivPortrait"
+                android:layout_below="@+id/ivPortrait"
+                android:layout_gravity="left|center"
+                android:layout_marginRight="15.0dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="心情好"
+                android:textColor="#ffffff"
+                android:textSize="12.0sp" />
+
+            <ImageView
+                android:id="@+id/ivInfoTriangle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:clickable="false"
+                android:src="@drawable/triangle" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_below="@+id/lyVerifyInfo"
+            android:layout_gravity="center"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/groupbg" >
+
+            <FrameLayout
+                android:id="@+id/fldetails_info"
+                android:layout_width="0dip"
+                android:layout_height="45.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_marginTop="3dip"
+                    android:text="详细"
+                    android:textColor="#ffffff"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:text="资料"
+                    android:textColor="#ffffff"
+                    android:textSize="14.0sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/lyFollowNum"
+                android:layout_width="0dip"
+                android:layout_height="45.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/btn_follow_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_marginTop="3dip"
+                    android:text="0"
+                    android:textColor="#ffffff"
+                    android:textSize="14.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:text="关注"
+                    android:textColor="#ffffff"
+                    android:textSize="14.0sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/lyFansNum"
+                android:layout_width="0dip"
+                android:layout_height="45.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/btn_fans_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_marginTop="3dip"
+                    android:text="0"
+                    android:textColor="#ffffff"
+                    android:textSize="14.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:text="粉丝"
+                    android:textColor="#ffffff"
+                    android:textSize="14.0sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/lyJournalNum"
+                android:layout_width="0dip"
+                android:layout_height="45.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/btn_journal_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_marginTop="3dip"
+                    android:text="0"
+                    android:textColor="#ffffff"
+                    android:textSize="14.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:text="日志"
+                    android:textColor="#ffffff"
+                    android:textSize="14.0sp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/personalhome_nodata"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/lyMainInfo"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_marginBottom="5dip"
+            android:src="@drawable/nodata" >
+        </ImageView>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="暂时没有新鲜事，赶紧去发吧~~~" />
+    </LinearLayout>
+
+</LinearLayout>

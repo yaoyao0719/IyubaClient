@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/titlebg" >
+
+        <Button
+            android:id="@+id/publishmood_back_btn"
+            android:layout_width="31.8dip"
+            android:layout_height="24dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/back"
+            android:textColor="#57616c"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/writedoing_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="发表新爱语"
+            android:textColor="#ffffff"
+            android:textSize="18sp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/senddoing_btn"
+            android:layout_width="27dip"
+            android:layout_height="28dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/send"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottombutton1"
+        android:layout_below="@+id/title" >
+
+        <EditText
+            android:id="@+id/iyu_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="top"
+            android:hint="说点神马"
+            android:imeOptions="actionSend"
+            android:textColor="#000000" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottombutton1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_above="@+id/bottombutton"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tvcurrlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_weight="1"
+            android:text="插入位置"
+            android:textColor="#0e4976"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvwordscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:text="/200"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottombutton"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_above="@+id/gridview"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/publishmood_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/location" />
+
+        <!--
+             <ImageView
+            android:id="@+id/publishmood_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/camera" />
+        -->
+
+        <ImageView
+            android:id="@+id/publishmood_emotion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/emotion" />
+
+        <!--
+             <ImageView
+            android:id="@+id/publishmood_keyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/keyboard" />
+        -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <GridView
+            android:id="@+id/grid_emotion"
+            android:layout_width="fill_parent"
+            android:layout_height="200dip"
+            android:background="#d1d8e3"
+            android:columnWidth="40dp"
+            android:gravity="center"
+            android:numColumns="auto_fit"
+            android:scrollbars="vertical"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="15dp"
+            android:visibility="gone" >
+        </GridView>
+    </LinearLayout>
+
+</RelativeLayout>
